@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 4</title>
+</head>
+<body>
+	<script>
+		var howmany = prompt('How many stars do you want, bro?', ' ');
+		var star = '*';
+		var area = '';
+		var newstring = '\n';
+	
+		for (var i = 1 ; i <= howmany; i++) {
+			var space = ' '.repeat(howmany - i);
+		    area += space + star.repeat(i + i - 1) + newstring; 
+		}
+		console.log(area);
+	</script>
+</body>
+</html> 
